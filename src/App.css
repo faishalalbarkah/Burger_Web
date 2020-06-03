@@ -1,38 +1,672 @@
-.App {
+.Cover {
+  display: flex;
+  /* flex: 1; */
+  margin-bottom: 20px;
+}
+
+/* Left */
+
+.Left {
+  display: flex;
+  flex: 2;
+  /* min-height: 700px; */
+  flex-direction: column;
+}
+
+.headerkiri {
+  height: 80px;
+  display: flex;
+}
+
+.Line {
+  margin-top: 15px;
+  width: 40px;
+  margin-left: 60px;
+  flex: 1;
+  position: absolute;
+}
+
+.text {
+  flex: 1;
+  padding-top: 15px;
+  left: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  margin-left: 80px;
+}
+
+.PembungkusLine {
+  display: flex;
+  flex: 1;
+  float: left;
+}
+
+.pembungkus-search {
+  display: flex;
+  flex: 1;
+  float: right;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 50px;
+  border-width: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.search {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  border: 0px;
+  padding: 20px 0px;
+  margin-left: 5px;
+}
+
+.searchlogo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.ContentLeft {
+  flex: 1;
+}
+
+.Slider {
+  height: 150px;
+  margin-top: 50px;
+  margin-right: 45px;
+  margin-left: 60px;
+  flex: 1;
+  display: flex;
+  box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.726);
+  border-radius: 10px;
+}
+
+.Image {
+  flex: 1;
+}
+
+.Image > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.PembungkusTextSlider {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex: 2;
+  background-color: #f7cfbc;
+}
+
+.TextSlider {
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
+  margin-top: 40px;
+  color: #fa8148;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TextSliderTwo {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -17px;
+  color: #f7f7f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LearnMore {
+  color: #fa8148;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 70px;
+  padding-top: 10px;
+  /* position: absolute; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Arrow-LearnMore {
+  font-size: 25px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: -47px;
+  margin-right: 20px;
+  color: #fa8148;
+  position: relative;
+}
+
+.Restaurants {
+  margin-right: 45px;
+  margin-left: 55px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+
+.RestaurantsLeft {
+  flex: 1;
+}
+
+.RestaurantsLeft > p {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.RestaurantsLeft > img {
+  margin-left: 110px;
+  margin-top: 4px;
+}
+
+.RestaurantsRight {
+  flex: 1;
+}
+
+.PembungkusDeliveryNow {
+  height: 40px;
+  width: 180px;
+  float: right;
+  border-radius: 30px;
+  background-color: #fa8400;
+  flex-direction: row;
+  display: flex;
+}
+
+#IconJam {
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.PembungkusDeliveryNow > p {
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  margin-left: 25px;
+  margin-top: 8px;
+}
+
+#IconArrowDown {
+  color: white;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.MacamMenu {
+  height: 120px;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-left: 55px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.MenuAll {
+  border-radius: 30px;
+  height: 120px;
+  width: 65px;
+  border-width: 5px;
+  margin-left: 10px;
+  background-color: #f5c738;
+}
+
+.MenuPizza {
+  border-radius: 30px;
+  height: 120px;
+  width: 65px;
+  background-color: #f7f7f7;
+  border-width: 5px;
+  margin-left: 10px;
+}
+
+.ImageMenu {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 8px;
+  background-color: white;
+}
+
+.ImageMenu > img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.ImageMenu > p {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.IconArrowRightMenu {
+  flex: 1;
+  width: 40px;
+  height: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 35px;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+.MakananEnak {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 130px;
+  margin-top: 80px;
+  margin-left: 55px;
+  margin-right: 40px;
+}
+
+.Makanan1 {
+  height: 120px;
+  width: 220px;
+}
+
+.Makanan2 {
+  height: 120px;
+  width: 220px;
+  margin-left: 65px;
+}
+
+.Makanan1 > img {
+  width: 220px;
+  height: 120px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.Makanan2 > img {
+  width: 220px;
+  height: 120px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.Timer {
+  width: 80px;
+  height: 35px;
+  background-color: white;
+  position: relative;
+  margin-top: 85px;
+  border-top-right-radius: 10px;
+}
+
+.Timer > p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.Makanan1 > p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.Makanan2 > p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.PembungkusPenilaian {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 40px;
+  margin-top: -10px;
+}
+
+.IconStar {
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.IconStar > p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#Keterangan {
+  font-size: 13px;
+  margin-left: 15px;
+  color: #cacaca;
+}
+
+.carousel-item {
+  display: flex !important;
+  float: none !important;
+  width: 90px !important;
+  margin-right: 0 !important;
+}
+
+.carousel-indicators {
+  bottom: none !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+
+.carousel-indicators .active {
+  position: absolute !important;
+}
+
+.carousel {
+  margin-top: -20px !important;
+}
+/* End Left */
+/* Right */
+
+.Right {
+  display: flex;
+  flex: 1;
+  background-color: #f7f7f7;
+  /* min-height: 700px; */
+}
+
+.headerkanan {
+  display: flex;
+  flex: 1;
+  height: 80px;
+  position: absolute;
+}
+
+.PembungkusIcon {
+  margin-left: 40px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Kotak {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 60px;
+  border-radius: 10px;
+  background-color: #f5c738;
+  margin-left: 50px;
+}
+
+.Kotak > p {
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 11px;
+  padding-top: 4px;
+}
+
+.Icon {
+  margin-top: 5px;
+  padding-bottom: 15px;
+  font-size: 28px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.ContentRight {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1;
+}
+
+.MyOrder {
+  margin-top: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.PesananUngu {
+  min-height: 100px;
+  width: 350px;
+  background-color: #8f0de8;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.OneUngu {
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#text1 {
+  font-weight: 600;
+  color: white;
+  /* position: absolute; */
+}
+
+#text2 {
+  font-weight: 600;
+  color: #f5c738;
+  float: right;
+  margin-right: 20px;
+  margin-top: -35px;
+}
+
+.TwoUngu {
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#text11 {
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#text12 {
+  font-weight: 600;
+  color: #f5c738;
+  float: right;
+  margin-right: 20px;
+  margin-top: -37px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MenuMakanan {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  display: flex;
+  flex: 1;
+  width: 350px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.MenuMakanan1 {
+  flex: 1;
+  flex-direction: row;
+}
+
+.PesananImage > img {
+  flex: 1;
+  width: 85px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.JumlahPesanan {
+  flex-direction: row;
+  position: absolute;
+  margin-left: 115px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.NamaMakanan {
+  position: absolute;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.HargaMakanan {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #b2b6bb;
+}
+
+.TotalHarga {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#Total {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+}
+
+#Harga {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.Garis {
+  height: 7px;
+  width: 350px;
+  border-width: 10px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  margin-left: 40px;
+}
+
+.Persons {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Persons > p {
+  font-weight: 500;
+}
+
+.IncDec {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: 120px;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: -54px;
+}
+
+.Increment {
+  height: 40px;
+  width: 40px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Increment > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.Decrement {
+  height: 40px;
+  width: 40px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Decrement > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-left: 15px;
+}
+
+#Jumlah {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Checkout {
+  height: 80px;
+  margin-top: 20px;
+  background-color: #f5c738;
+  margin-left: 30px;
+  flex: 1;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.Checkout > p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 23px;
+  margin-left: 50px;
+  position: absolute;
+}
+
+#Arrow-Icon {
+  font-size: 25px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-right: 50px;
+}
+/* End Right */
